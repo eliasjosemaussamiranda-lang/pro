@@ -21,29 +21,49 @@
     <nav class="sidebar" id="site-menu" aria-label="Páginas del sitio" hidden>
       <a href="conceptos.html" data-menu-link aria-current="page">Conceptos</a>
       <a href="etiquetas.html" data-menu-link>Etiquetas</a>
-      <a href="ejemplo.html" data-menu-link>Ejemplo</a>
+      <a href="practicas.html" data-menu-link>Prácticas</a>
+      <a href="errores.html" data-menu-link>Errores comunes</a>
+      <a href="siguiente.html" data-menu-link>Siguiente nivel</a>
     </nav>
     <main class="container">
       <section class="section-card">
-        <h1>Conocimientos previos</h1>
-        <p class="lead">Ideas importantes para empezar a construir una página web con HTML y CSS.</p>
+        <h1>Conceptos básicos</h1>
+        <p class="lead">Vamos a entender para qué sirve cada tecnología antes de combinarlas.</p>
         <div class="grid">
           <article class="card">
-            <h3>Etiquetas básicas</h3>
-            <p>Las etiquetas definen la estructura y el contenido de una página. Se escriben entre signos <strong>&lt; &gt;</strong>.</p>
+            <h2>¿Qué es HTML?</h2>
+            <p>HTML significa <em>HyperText Markup Language</em>. Es un lenguaje de marcado que organiza el contenido y le indica al navegador qué es un título, párrafo, imagen, enlace o lista.</p>
+            <p>HTML crea la estructura, pero no se encarga principalmente de que la página se vea bonita.</p>
           </article>
           <article class="card">
-            <h3>Orden y cierre</h3>
-            <p>Muchas etiquetas tienen una apertura y un cierre. Por ejemplo: <code>&lt;p&gt;Texto&lt;/p&gt;</code>. Ciérralas en el orden correcto.</p>
+            <h2>¿Qué es CSS?</h2>
+            <p>CSS se ocupa de la apariencia. Con CSS podemos cambiar colores, tamaños, espacios, bordes, fondos, fuentes y la distribución de la página.</p>
+            <div class="example"><pre><code>.titulo {
+  color: blue;
+  font-size: 40px;
+}</code></pre></div>
+            <p>HTML crea el título y CSS decide cómo se verá.</p>
           </article>
           <article class="card">
-            <h3>Semántica</h3>
-            <p>Usa etiquetas que describan el contenido, como títulos, párrafos, listas y secciones. Así el documento resulta más claro.</p>
+            <h2>¿Y JavaScript?</h2>
+            <p>JavaScript agrega comportamiento e interactividad: puede responder a botones, cambiar textos, mostrar mensajes y hacer cálculos.</p>
+            <div class="example"><pre><code>function saludar() {
+  alert("Hola");
+}</code></pre></div>
+            <p>Más adelante aprenderemos a organizarlo en su propio archivo.</p>
           </article>
           <article class="card">
-            <h3>Estilo y presentación</h3>
-            <p>CSS permite cambiar colores, tamaños, espacios y distribución visual sin mezclar el diseño con el contenido HTML.</p>
+            <h2>¿Cómo trabajan juntos?</h2>
+            <p><strong>HTML</strong> construye la estructura, <strong>CSS</strong> define la apariencia y <strong>JavaScript</strong> añade interacción. Juntos permiten crear sitios web completos.</p>
           </article>
+        </div>
+        <div class="lesson">
+          <h2>Class e id</h2>
+          <p>Una <code>class</code> puede agrupar varios elementos que comparten un estilo. Un <code>id</code> normalmente identifica un elemento específico.</p>
+          <div class="example"><pre><code>&lt;p class="importante"&gt;Un texto importante&lt;/p&gt;
+&lt;p class="importante"&gt;Otro texto importante&lt;/p&gt;
+&lt;h1 id="titulo"&gt;Mi página&lt;/h1&gt;</code></pre></div>
+          <p>Piensa en <code>class</code> como un grupo y en <code>id</code> como una identificación individual. En CSS se seleccionan con <code>.importante</code> y <code>#titulo</code>.</p>
         </div>
       </section>
     </main>

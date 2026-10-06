@@ -255,11 +255,29 @@
         margin-bottom: 0.5rem;
       }
 
+      .card h2 {
+        font-size: 1.35rem;
+        margin: 0 0 0.65rem;
+      }
+
       .card code {
         background: rgba(0,0,0,0.06);
         padding: 0.15rem 0.4rem;
         border-radius: 6px;
         font-size: 0.95em;
+      }
+
+      .lesson {
+        margin-top: 1.5rem;
+      }
+
+      .note {
+        margin-top: 1.25rem;
+        padding: 1rem 1.2rem;
+        border-left: 4px solid var(--accent-strong);
+        border-radius: 8px;
+        background: rgba(127, 231, 182, 0.09);
+        color: var(--muted);
       }
 
       ol {
@@ -277,6 +295,11 @@
         border-radius: 12px;
         padding: 1rem 1.1rem;
         overflow-x: auto;
+      }
+
+      .example pre {
+        margin: 0;
+        white-space: pre;
       }
 
       .example code {
