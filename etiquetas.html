@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas HTML | Portafolio de Elias</title>
+    <link rel="stylesheet" href="pro.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="brand-group">
+          <div class="brand">Elias</div>
+          <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <a class="home-link" href="pro.html">Inicio</a>
+      </div>
+    </header>
+    <nav class="sidebar" id="site-menu" aria-label="Páginas del sitio" hidden>
+      <a href="conceptos.html" data-menu-link>Conceptos</a>
+      <a href="etiquetas.html" data-menu-link aria-current="page">Etiquetas</a>
+      <a href="ejemplo.html" data-menu-link>Ejemplo</a>
+    </nav>
+    <main class="container">
+      <section class="section-card">
+        <h1>Etiquetas más usadas</h1>
+        <p class="lead">Estas etiquetas sirven para organizar elementos comunes de una página HTML.</p>
+        <ol>
+          <li><strong><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code></strong>: títulos y subtítulos; <code>&lt;h1&gt;</code> es el título principal.</li>
+          <li><strong><code>&lt;p&gt;</code></strong>: crea un párrafo.</li>
+          <li><strong><code>&lt;img&gt;</code></strong>: muestra una imagen. Usa el atributo <code>alt</code> para describirla.</li>
+          <li><strong><code>&lt;ol&gt;</code></strong>: crea una lista ordenada.</li>
+          <li><strong><code>&lt;ul&gt;</code></strong>: crea una lista con viñetas.</li>
+          <li><strong><code>&lt;li&gt;</code></strong>: representa un elemento de una lista.</li>
+          <li><strong><code>&lt;strong&gt;</code></strong> y <strong><code>&lt;em&gt;</code></strong>: indican contenido importante o enfatizado.</li>
+          <li><strong><code>&lt;a&gt;</code></strong>: crea un enlace a otra página o lugar del sitio.</li>
+        </ol>
+      </section>
+    </main>
+    <script src="menu.js"></script>
+  </body>
+</html>

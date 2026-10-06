@@ -9,15 +9,22 @@
   <body>
     <header>
       <div class="container topbar">
-        <div class="brand">Elias</div>
-        <nav>
-          <a href="#inicio">Inicio</a>
-          <a href="#conceptos">Conceptos</a>
-          <a href="#etiquetas">Etiquetas</a>
-          <a href="#ejemplo">Ejemplo</a>
-        </nav>
+        <div class="brand-group">
+          <div class="brand">Elias</div>
+          <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <a class="home-link" href="pro.html" aria-current="page">Inicio</a>
       </div>
     </header>
+    <nav class="sidebar" id="site-menu" aria-label="Páginas del sitio" hidden>
+      <a href="conceptos.html" data-menu-link>Conceptos</a>
+      <a href="etiquetas.html" data-menu-link>Etiquetas</a>
+      <a href="ejemplo.html" data-menu-link>Ejemplo</a>
+    </nav>
 
     <main id="inicio" class="container">
       <section class="hero">
@@ -31,8 +38,8 @@
               <strong>&lt;/nombre&gt;</strong>.
             </p>
             <div class="cta-row">
-              <a class="btn" href="#conceptos">Ver conceptos</a>
-              <a class="btn secondary" href="#ejemplo">Ver ejemplo</a>
+              <a class="btn" href="conceptos.html">Ver conceptos</a>
+              <a class="btn secondary" href="ejemplo.html">Ver ejemplo</a>
             </div>
           </div>
 
@@ -42,68 +49,7 @@
         </div>
       </section>
 
-      <section id="conceptos" class="section-card">
-        <h2>Conocimientos previos</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Etiquetas básicas</h3>
-            <p>
-              Las etiquetas se usan para definir estructura y contenido. La mayoría se
-              escriben dentro de signos <strong>&lt; &gt;</strong> y necesitan cierre.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Orden y cierre</h3>
-            <p>
-              Es importante abrir una etiqueta y cerrarla en el orden correcto. Si no se
-              cierra, el navegador puede interpretar el contenido de forma incorrecta.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Semántica</h3>
-            <p>
-              Las etiquetas ayudan a organizar el contenido del sitio, como títulos,
-              párrafos, listas y bloques importantes.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Estilo y presentación</h3>
-            <p>
-              Con CSS se pueden controlar colores, tamaños, alineación y diseño general
-              de la página.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="etiquetas" class="section-card">
-        <h2>Etiquetas más usadas</h2>
-        <ol>
-          <li><strong>h1, h2, h3...</strong>: Se usan para crear títulos. <strong>h1</strong> es el más importante y el resto son subtítulos.</li>
-          <li><strong>p</strong>: Define un párrafo.</li>
-          <li><strong>img</strong>: Inserta una imagen.</li>
-          <li><strong>ol</strong>: Crea una lista ordenada.</li>
-          <li><strong>li</strong>: Define cada elemento de la lista.</li>
-          <li><strong>b</strong> e <strong>i</strong>: Dan formato en negrita e itálica.</li>
-        </ol>
-      </section>
-
-      <section id="ejemplo" class="section-card">
-        <h2>Ejemplo sencillo</h2>
-        <div class="example">
-          <code>
-            &lt;h1&gt;Bienvenido&lt;/h1&gt;<br />
-            &lt;p&gt;Este es un párrafo con texto importante.&lt;/p&gt;<br />
-            &lt;ol&gt;<br />
-            &nbsp;&nbsp;&lt;li&gt;HTML&lt;/li&gt;<br />
-            &nbsp;&nbsp;&lt;li&gt;CSS&lt;/li&gt;<br />
-            &lt;/ol&gt;
-          </code>
-        </div>
-      </section>
     </main>
+    <script src="menu.js"></script>
   </body>
 </html>

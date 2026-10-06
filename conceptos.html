@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conceptos | Portafolio de Elias</title>
+    <link rel="stylesheet" href="pro.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="brand-group">
+          <div class="brand">Elias</div>
+          <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <a class="home-link" href="pro.html">Inicio</a>
+      </div>
+    </header>
+    <nav class="sidebar" id="site-menu" aria-label="Páginas del sitio" hidden>
+      <a href="conceptos.html" data-menu-link aria-current="page">Conceptos</a>
+      <a href="etiquetas.html" data-menu-link>Etiquetas</a>
+      <a href="ejemplo.html" data-menu-link>Ejemplo</a>
+    </nav>
+    <main class="container">
+      <section class="section-card">
+        <h1>Conocimientos previos</h1>
+        <p class="lead">Ideas importantes para empezar a construir una página web con HTML y CSS.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Etiquetas básicas</h3>
+            <p>Las etiquetas definen la estructura y el contenido de una página. Se escriben entre signos <strong>&lt; &gt;</strong>.</p>
+          </article>
+          <article class="card">
+            <h3>Orden y cierre</h3>
+            <p>Muchas etiquetas tienen una apertura y un cierre. Por ejemplo: <code>&lt;p&gt;Texto&lt;/p&gt;</code>. Ciérralas en el orden correcto.</p>
+          </article>
+          <article class="card">
+            <h3>Semántica</h3>
+            <p>Usa etiquetas que describan el contenido, como títulos, párrafos, listas y secciones. Así el documento resulta más claro.</p>
+          </article>
+          <article class="card">
+            <h3>Estilo y presentación</h3>
+            <p>CSS permite cambiar colores, tamaños, espacios y distribución visual sin mezclar el diseño con el contenido HTML.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="menu.js"></script>
+  </body>
+</html>

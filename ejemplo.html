@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo HTML | Portafolio de Elias</title>
+    <link rel="stylesheet" href="pro.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="brand-group">
+          <div class="brand">Elias</div>
+          <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <a class="home-link" href="pro.html">Inicio</a>
+      </div>
+    </header>
+    <nav class="sidebar" id="site-menu" aria-label="Páginas del sitio" hidden>
+      <a href="conceptos.html" data-menu-link>Conceptos</a>
+      <a href="etiquetas.html" data-menu-link>Etiquetas</a>
+      <a href="ejemplo.html" data-menu-link aria-current="page">Ejemplo</a>
+    </nav>
+    <main class="container">
+      <section class="section-card">
+        <h1>Ejemplo sencillo de HTML</h1>
+        <p class="lead">Este fragmento combina un título, un párrafo y una lista.</p>
+        <div class="example">
+          <code>
+            &lt;h1&gt;Bienvenido&lt;/h1&gt;<br />
+            &lt;p&gt;Estoy aprendiendo HTML.&lt;/p&gt;<br />
+            &lt;ol&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;HTML&lt;/li&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;CSS&lt;/li&gt;<br />
+            &lt;/ol&gt;
+          </code>
+        </div>
+      </section>
+    </main>
+    <script src="menu.js"></script>
+  </body>
+</html>
