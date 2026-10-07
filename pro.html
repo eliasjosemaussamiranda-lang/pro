@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio personal</title>
-    <link rel="stylesheet" href="pro.css" />
+    <title>inicio programacion</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
     <header>
       <div class="container topbar">
         <div class="brand-group">
-          <div class="brand">Elias</div>
+          <button class="brand" type="button" aria-label="Cambiar la fuente de Elias" title="Haz clic para cambiar la fuente">Elias</button>
           <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu">
             <span></span>
             <span></span>
@@ -30,49 +33,55 @@
 
     <main id="inicio" class="container">
       <section class="hero">
-        <div class="hero-card hero-grid">
-          <div>
-            <h1>Aprende a programar <span class="highlight">desde cero</span>.</h1>
+        <div class="hero-card">
+          <div class="hero-copy">
+            <h1>Aprendamos a programar paginas web <span class="highlight">desde cero</span></h1>
             <p class="lead">
-              Antes de escribir código, hay una pregunta importante: ¿en qué vamos a
-              programar? En este recorrido comenzaremos con el desarrollo web y
-              aprenderemos paso a paso, sin intentar saberlo todo de golpe.
-            </p>
+              Antes de <b>progranar paginas web </b>hay que preguntarnos <b>¿</b>en qué vamos a
+              programar<b>?</p>
+            <p class="lead" ></b> En esta pagina comenzaremos y
+              aprenderemos paso a paso a programar con <b>visula estudio code</b></p>
+            
             <div class="cta-row">
               <a class="btn" href="conceptos.html">Ver conceptos</a>
               <a class="btn secondary" href="practicas.html">Empezar a practicar</a>
             </div>
           </div>
 
-          <div class="portrait">
-            <img src="imgen.jpg" alt="Referencia visual de aprendizaje" />
-          </div>
         </div>
       </section>
 
-      <section class="section-card">
-        <h2>¿En qué vamos a programar?</h2>
+      <section class="section-card download-section">
+        <h2>¿Dónde puedes conseguir Visual Studio Code?</h2>
         <p>
-          Vamos a crear páginas web con <strong>Visual Studio Code</strong> (VS Code),
-          un editor donde escribimos y organizamos nuestros archivos. VS Code no es un
-          lenguaje de programación: es una herramienta que puede sugerir y completar
-          código mientras trabajamos. Lo importante es entender lo que escribimos, no
-          copiar sugerencias sin saber qué hacen.
+         <strong>Visual Studio Code (VS Code)</strong> es 
+          <strong>gratis.</strong>
+          Puedes descargarlo desde su
+          <a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener noreferrer">página oficial de descarga</a>.
+          Está disponible para<b>: Windows</b>, <b>Linux</b> y <b>macOS</b>.
+        </p>
+      </section>
+
+      <section class="section-card">
+        <h2>¿qué vamos a usar?</h2>
+        <p>
+           usamos <strong>VS Code</strong> porque es una herramienta que puede sugerir y completar código mientras trabajamos. Lo importante es entender lo que escribimos. no copiar sugerencias sin saber qué hacen, en <strong>VS Code</strong> 
+          usamos lengiajes de programacion como <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong> para crear paginas web. 
         </p>
         <div class="grid">
-          <article class="card">
+          <article class="card card-html">
             <h3>HTML</h3>
-            <p>La estructura y el contenido de la página.</p>
+            <p>La estructura y el contenido de la página, en otras palabras HTML es el cuerpo de la página.</p>
           </article>
-          <article class="card">
+          <article class="card card-css">
             <h3>CSS</h3>
-            <p>La apariencia, los colores y la distribución.</p>
+            <p>La apariencia, los colores y la distribución, en otras palabras css es el estilo de la página.</p>
           </article>
-          <article class="card">
+          <article class="card card-javascript">
             <h3>JavaScript</h3>
-            <p>El comportamiento y la interactividad.</p>
+            <p>El comportamiento y la interactividad, en otras palabras JavaScript son los músculos y los sentidos.</p>
           </article>
-          <article class="card">
+          <article class="card card-needs">
             <h3>¿Qué necesitamos?</h3>
             <p>Un computador, un navegador, VS Code y ganas de probar y equivocarnos.</p>
           </article>
@@ -84,6 +93,6 @@
       </section>
 
     </main>
-    <script src="menu.js"></script>
+    <script src="../js/menu.js"></script>
   </body>
 </html>
