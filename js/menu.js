@@ -66,6 +66,14 @@ function closeMenu() {
   menuButton.setAttribute("aria-label", "Abrir menú");
 }
 
+function scheduleMenuClose() {
+  window.clearTimeout(closeMenuTimer);
+
+  if (!siteMenu.hidden && !siteMenu.matches(":hover")) {
+    closeMenuTimer = window.setTimeout(closeMenu, 5000);
+  }
+}
+
 menuButton.addEventListener("click", () => {
   if (!siteMenu.hidden) {
     closeMenu();
@@ -75,8 +83,14 @@ menuButton.addEventListener("click", () => {
   siteMenu.hidden = false;
   menuButton.setAttribute("aria-expanded", "true");
   menuButton.setAttribute("aria-label", "Cerrar menú");
-  closeMenuTimer = window.setTimeout(closeMenu, 5000);
+  scheduleMenuClose();
 });
+
+siteMenu.addEventListener("mouseenter", () => {
+  window.clearTimeout(closeMenuTimer);
+});
+
+siteMenu.addEventListener("mouseleave", scheduleMenuClose);
 
 siteMenu.addEventListener("click", (event) => {
   if (event.target.closest("[data-menu-link]")) {
