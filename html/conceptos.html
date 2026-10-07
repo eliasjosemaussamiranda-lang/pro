@@ -18,25 +18,54 @@
             <span></span><span></span><span></span>
           </button>
         </div>
+        <span class="page-indicator" aria-label="Página actual: Primeros pasos">Primeros pasos</span>
         <a class="home-link" href="pro.html">Inicio</a>
       </div>
     </header>
     <nav class="sidebar" id="site-menu" aria-label="Páginas del sitio" hidden>
-      <a href="conceptos.html" data-menu-link aria-current="page">Conceptos</a>
-      <a href="etiquetas.html" data-menu-link>Etiquetas</a>
-      <a href="practicas.html" data-menu-link>Prácticas</a>
+      <a href="conceptos.html" data-menu-link aria-current="page">Primeros pasos</a>
+      <a href="etiquetas.html" data-menu-link>Etiquetas en HTML</a>
+      <a href="etiquetas-css.html" data-menu-link>Etiquetas en CSS</a>
+      <a href="etiquetas-js.html" data-menu-link>Etiquetas en JavaScript</a>
       <a href="errores.html" data-menu-link>Errores comunes</a>
+      <a href="practicas.html" data-menu-link>Prácticas</a>
       <a href="siguiente.html" data-menu-link>Siguiente nivel</a>
     </nav>
     <main class="container">
       <section class="section-card">
-        <h1>Conceptos básicos</h1>
+        <h1>Primeros pasos para comenzar a programar</h1>
+        <p class="lead workspace-step">Antes de escribir código, vamos a crear una carpeta para guardar juntos los archivos de nuestro proyecto y abrir esa carpeta en Visual Studio Code (VS Code).</p>
+        <div class="lesson workspace-step">
+          <h2>1. Crea una carpeta para tu proyecto</h2>
+          <ol>
+            <li>Abre el Explorador de archivos de Windows. Puedes hacerlo con el atajo <kbd>Windows</kbd> + <kbd>E</kbd>.</li>
+            <li>Entra en un lugar fácil de encontrar, como la carpeta <strong>Documentos</strong>.</li>
+            <li>Haz clic derecho en un espacio vacío y selecciona <strong>Nuevo → Carpeta</strong>. También puedes usar <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>.</li>
+            <li>Escribe un nombre sencillo, por ejemplo <code>mi-primer-sitio</code>, y presiona <kbd>Enter</kbd>.</li>
+          </ol>
+          <p>Esta carpeta será el lugar donde guardaremos todos los archivos del sitio. Puedes usar otro nombre, pero evita nombres difíciles de reconocer.</p>
+        </div>
+        <div class="lesson workspace-step">
+          <h2>2. Abre la carpeta en Visual Studio Code</h2>
+          <ol>
+            <li>Abre Visual Studio Code desde el menú Inicio de Windows.</li>
+            <li>En la parte superior, selecciona <strong>Archivo → Abrir carpeta...</strong> (en inglés, <strong>File → Open Folder...</strong>).</li>
+            <li>En la ventana que aparece, busca <strong>Documentos</strong> y selecciona la carpeta <code>mi-primer-sitio</code> que acabas de crear. Selecciona la carpeta, no un archivo dentro de ella.</li>
+            <li>Presiona <strong>Seleccionar carpeta</strong> para abrirla en VS Code.</li>
+            <li>Si VS Code pregunta si confías en los archivos de esa carpeta y la creaste tú, confirma que confías para continuar.</li>
+          </ol>
+          <p>La carpeta aparecerá en el panel <strong>Explorador</strong>, a la izquierda. Cuando creemos archivos para el proyecto, aparecerán allí y quedarán guardados dentro de esa carpeta.</p>
+          <p class="note">Si no ves el panel, abre el menú <strong>Ver → Explorador</strong> o presiona <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd>.</p>
+        </div>
+      </section>
+      <section class="section-card">
+        <h2>Conceptos</h2>
         <p class="lead">Vamos a entender para qué sirve cada tecnología antes de combinarlas.</p>
         <div class="grid">
           <article class="card">
             <h2>¿Qué es HTML?</h2>
-            <p>HTML significa <em>HyperText Markup Language</em>. Es un lenguaje de marcado que organiza el contenido y le indica al navegador qué es un título, párrafo, imagen, enlace o lista.</p>
-            <p>HTML crea la estructura, pero no se encarga principalmente de que la página se vea bonita.</p>
+            <p><b>HTML</b> significa <em><b>HyperText Markup Language</b></em>. es un lenguaje que sirve para organizar el contenido de una página web. Le indica al navegador qué parte es un título, un párrafo, una imagen, un enlace o una lista.</p>
+            <p><b>HTML</b> es como <b>el esqueleto de una página web</b>, porque organiza y sostiene todas sus partes..</p>
           </article>
           <article class="card">
             <h2>¿Qué es CSS?</h2>
@@ -60,13 +89,10 @@
             <p><strong>HTML</strong> construye la estructura, <strong>CSS</strong> define la apariencia y <strong>JavaScript</strong> añade interacción. Juntos permiten crear sitios web completos.</p>
           </article>
         </div>
-        <div class="lesson">
-          <h2>Class e id</h2>
-          <p>Una <code>class</code> puede agrupar varios elementos que comparten un estilo. Un <code>id</code> normalmente identifica un elemento específico.</p>
-          <div class="example"><pre><code>&lt;p class="importante"&gt;Un texto importante&lt;/p&gt;
-&lt;p class="importante"&gt;Otro texto importante&lt;/p&gt;
-&lt;h1 id="titulo"&gt;Mi página&lt;/h1&gt;</code></pre></div>
-          <p>Piensa en <code>class</code> como un grupo y en <code>id</code> como una identificación individual. En CSS se seleccionan con <code>.importante</code> y <code>#titulo</code>.</p>
+      </section>
+      <section class="section-card">
+        <div class="cta-row cta-row--center">
+          <a class="btn" href="etiquetas.html">Más información</a>
         </div>
       </section>
     </main>
